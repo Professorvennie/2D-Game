@@ -1,5 +1,7 @@
 package com.professorvennie.game.main;
 
+import com.professorvennie.game.handlers.KeyHandler;
+
 import java.awt.*;
 import java.awt.image.BufferStrategy;
 
@@ -36,6 +38,7 @@ public class Game extends Canvas implements Runnable {
         setMaximumSize(size);
         setMinimumSize(size);
         window.createWindow();
+        addKeyListener(new KeyHandler());
     }
 
     public void render() {
