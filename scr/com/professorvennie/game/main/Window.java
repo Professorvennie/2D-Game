@@ -9,7 +9,7 @@ public class Window {
 
     int width, height;
     String title;
-    JFrame frame;
+    private JFrame frame;
 
     public Window(int width, int height, String title) {
         this.width = width;
@@ -38,5 +38,9 @@ public class Window {
 
     public String getTitle() {
         return title;
+    }
+
+    public JFrame getFrame() {
+        return frame;
     }
 }
